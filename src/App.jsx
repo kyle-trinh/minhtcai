@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import StarsCanvas from './components/canvas/StarsCanvas';
 import { navLinks } from './constants';
 import EarthCanvas from './components/canvas/EarthCanvas';
+import Introduction from './components/Introduction';
 
 function App() {
   return (
@@ -40,7 +41,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='h-screen text-white'>Section 1</div>
+      <Introduction />
       <div className='h-screen text-white'>Section 1</div>
     </Suspense>
   );
