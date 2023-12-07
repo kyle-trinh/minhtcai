@@ -7,7 +7,7 @@ import { researchInterests } from '../constants';
 const ServiceCard = ({ index, title, image, description }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-    className={` rounded-[20px] bg-tertiary flex h-64 ${
+    className={` rounded-[20px] bg-tertiary flex h-72  ${
       index % 2 === 1 ? 'flex-row-reverse ml-16' : 'mr-16'
     }`}
   >

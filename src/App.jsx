@@ -3,6 +3,7 @@ import StarsCanvas from './components/canvas/StarsCanvas';
 import { navLinks } from './constants';
 import EarthCanvas from './components/canvas/EarthCanvas';
 import Introduction from './components/Introduction';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
         </div>
       </div>
       <Introduction />
+      <Projects />
       <div className='h-screen text-white'>Section 1</div>
     </Suspense>
   );
