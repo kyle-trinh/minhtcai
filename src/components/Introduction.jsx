@@ -59,4 +59,4 @@ const IntroductionSection = () => {
   );
 };
 
-export default SectionWrapper(IntroductionSection, 'about');
+export default SectionWrapper(IntroductionSection, 'research-interest');

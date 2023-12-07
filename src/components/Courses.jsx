@@ -9,22 +9,25 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { courses, experiences } from '../constants';
 import { SectionWrapper } from './hoc';
-import { textVariant } from './utils/motion';
+import { fadeIn, textVariant } from './utils/motion';
 
-const CourseCard = ({ title, classID }) => {
+const CourseCard = ({ title, classID, index }) => {
   return (
-    <div className='flex bg-tertiary rounded-md items-center'>
+    <motion.div
+      className='flex bg-tertiary rounded-md items-center'
+      variants={fadeIn('up', 'spring', Math.floor(index / 2) * 0.3, 0.5)}
+    >
       <div className='bg-white-100 text-tertiary rounded-md px-3 py-3 h-full flex items-center'>
         <p>{classID}</p>
       </div>
       <div className='px-6 py-2'>
         <p>{title}</p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
-const Courses = () => {
+function Courses() {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -36,13 +39,13 @@ const Courses = () => {
         </h2>
       </motion.div>
 
-      <div className='mt-20 grid grid-cols-3 gap-x-12 gap-y-8'>
+      <div className='mt-20 grid grid-cols-2 gap-x-12 gap-y-8'>
         {courses.map((course, index) => (
-          <CourseCard key={`experience-${index}`} {...course} />
+          <CourseCard key={`experience-${index}`} {...course} index={index} />
         ))}
       </div>
     </>
   );
-};
+}
 
-export default SectionWrapper(Courses, 'courses');
+export default SectionWrapper(Courses, 'courseworks');
