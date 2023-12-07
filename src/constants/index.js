@@ -77,7 +77,7 @@ export const experiences = [
   {
     title: 'First Prize',
     company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
-    iconBg: '#383E56',
+    iconBg: '#E6DEDD',
     date: 'May 2023',
   },
   {
@@ -86,4 +86,17 @@ export const experiences = [
     iconBg: '#383E56',
     date: 'April 2023',
   },
+];
+
+export const courses = [
+  { title: 'Introduction to Machine Learning', classID: 'ML101' },
+  { title: 'Supervised Learning Techniques', classID: 'ML201' },
+  { title: 'Unsupervised Learning and Clustering', classID: 'ML301' },
+  { title: 'Natural Language Processing Fundamentals', classID: 'ML401' },
+  { title: 'Deep Learning and Neural Networks', classID: 'ML501' },
+  { title: 'Reinforcement Learning Applications', classID: 'ML601' },
+  { title: 'Machine Learning for Computer Vision', classID: 'ML701' },
+  { title: 'Time Series Analysis with Machine Learning', classID: 'ML801' },
+  { title: 'Ethical Considerations in Machine Learning', classID: 'ML901' },
+  { title: 'Advanced Topics in Machine Learning Research', classID: 'ML1001' },
 ];
