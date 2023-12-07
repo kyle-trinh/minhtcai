@@ -1,8 +1,40 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import {
+  Html,
+  OrbitControls,
+  Preload,
+  useGLTF,
+  useProgress,
+} from '@react-three/drei';
 
-// import CanvasLoader from '../Loader';
+const CanvasLoader = () => {
+  const { progress } = useProgress();
+  return (
+    <Html
+      as='div'
+      center
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+      }}
+    >
+      <span className='canvas-loader'></span>
+      <p
+        style={{
+          fontSize: 14,
+          color: '#F1F1F1',
+          fontWeight: 800,
+          marginTop: 40,
+        }}
+      >
+        {progress.toFixed(2)}%
+      </p>
+    </Html>
+  );
+};
 
 const Earth = () => {
   const earth = useGLTF('./planet/scene.gltf');
@@ -16,7 +48,6 @@ const EarthCanvas = () => {
   return (
     <Canvas
       shadows
-      //   frameloop='demand'
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{
@@ -26,8 +57,7 @@ const EarthCanvas = () => {
         position: [-4, 3, 6],
       }}
     >
-      {/* <Suspense fallback={<CanvasLoader />}> */}
-      <Suspense fallback={null}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
           enableZoom={false}

@@ -39,7 +39,7 @@ function Courses() {
         </h2>
       </motion.div>
 
-      <div className='mt-20 grid grid-cols-2 gap-x-12 gap-y-8'>
+      <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8'>
         {courses.map((course, index) => (
           <CourseCard key={`experience-${index}`} {...course} index={index} />
         ))}
