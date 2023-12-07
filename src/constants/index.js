@@ -66,3 +66,24 @@ export const projects = [
     image: segmentationThumbnail,
   },
 ];
+
+export const experiences = [
+  {
+    title: 'First Prize',
+    company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
+    iconBg: '#383E56',
+    date: 'June 2023',
+  },
+  {
+    title: 'First Prize',
+    company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
+    iconBg: '#383E56',
+    date: 'May 2023',
+  },
+  {
+    title: 'First Prize',
+    company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
+    iconBg: '#383E56',
+    date: 'April 2023',
+  },
+];

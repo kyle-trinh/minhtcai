@@ -4,6 +4,7 @@ import { navLinks } from './constants';
 import EarthCanvas from './components/canvas/EarthCanvas';
 import Introduction from './components/Introduction';
 import Projects from './components/Projects';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
       </div>
       <Introduction />
       <Projects />
+      <Experience />
       <div className='h-screen text-white'>Section 1</div>
     </Suspense>
   );
