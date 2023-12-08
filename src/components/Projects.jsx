@@ -2,17 +2,29 @@
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { segmentationThumbnail } from '../assets';
 import { SectionWrapper } from './hoc';
 import { fadeIn, textVariant } from './utils/motion';
 import { projects } from '../constants';
+import DialogDemo from './ui/diaglog';
+import { useState } from 'react';
 
-const ProjectCard = ({ index, name, description, image }) => {
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  image,
+  setIsModalOpen,
+  setIdx,
+}) => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
       whileHover={{
         translateY: '-16px',
+      }}
+      onClick={() => {
+        setIdx(index);
+        setIsModalOpen(true);
       }}
     >
       <div
@@ -22,9 +34,6 @@ const ProjectCard = ({ index, name, description, image }) => {
           speed: 450,
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer '
-        onClick={() => {
-          console.log('clicked');
-        }}
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -44,6 +53,8 @@ const ProjectCard = ({ index, name, description, image }) => {
 };
 
 const Projects = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [idx, setIdx] = useState(null);
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -75,9 +86,16 @@ const Projects = () => {
               .slice(0, 30)
               .join(' ')}...`}
             image={project.image}
+            setIsModalOpen={setIsModalOpen}
+            setIdx={setIdx}
           />
         ))}
       </div>
+      <DialogDemo
+        isOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        project={idx !== null ? projects[idx] : null}
+      />
     </>
   );
 };

@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <Suspense fallback={null}>
       <StarsCanvas />
