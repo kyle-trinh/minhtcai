@@ -36,6 +36,38 @@ function App() {
                   University of Hanoi, advised by Prof.Hung Nguyen.
                 </p>
               </div>
+              <div className='flex mt-6 gap-5 flex-wrap justify-center xl:justify-start'>
+                <a
+                  href='minh-resume.pdf'
+                  target='blank'
+                  rel='noreferrer noopener'
+                  className='bg-white text-primary rounded-lg px-3 py-2 hover:bg-secondary'
+                >
+                  Resume
+                </a>
+                <a
+                  href='https://github.com/minhtcai'
+                  target='blank'
+                  rel='noreferrer noopener'
+                  className='text-white border-white border-2 rounded-lg px-3 py-2 hover:bg-secondary hover:text-primary'
+                >
+                  Github
+                </a>
+                <a
+                  href='https://scholar.google.com/citations?user=k4t5_hEAAAAJ&hl=en&authuser=1'
+                  target='blank'
+                  rel='noreferrer noopener'
+                  className='text-white border-white border-2 rounded-lg px-3 py-2 hover:bg-secondary hover:text-primary'
+                >
+                  Google Scholar
+                </a>
+                <a
+                  href='mailto:minht@cs.cmu.edu'
+                  className='text-white border-white border-2 rounded-lg px-3 py-2 hover:bg-secondary hover:text-primary'
+                >
+                  Email
+                </a>
+              </div>
             </div>
           </div>
         </div>
