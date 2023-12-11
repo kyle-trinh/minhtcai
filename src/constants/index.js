@@ -1,4 +1,5 @@
 import {
+  actuateLogo,
   cameraThumbnail,
   cubeThumbnail,
   fedThumbnail,
@@ -11,6 +12,7 @@ import {
   samThumbnail,
   segmentationThumbnail,
   sortThumbnail,
+  vedaLogo,
 } from '../assets';
 
 export const navLinks = [
@@ -154,34 +156,168 @@ export const projects = [
 
 export const experiences = [
   {
-    title: 'First Prize',
-    company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
+    title: 'First Prize & Best in Show',
+    company_name: 'hackAuton CMU (Team: Patient Safety)',
     iconBg: '#383E56',
-    date: 'June 2023',
+    date: '2023',
+    link: 'https://docs.google.com/presentation/d/1U9HUG89AFapU0Pz71Q3tZr5lgBnSF4tqZ3lJitQnjI4/edit#slide=id.g27f50e000bb_0_42',
   },
   {
-    title: 'First Prize',
-    company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
+    title: null,
+    company_name: 'McKinsey Digital Hackathon New York (Team: CPC4)',
     iconBg: '#E6DEDD',
-    date: 'May 2023',
+    date: '2023',
+    link: 'https://hackathon-nyc2023.mckinsey.com/',
   },
   {
-    title: 'First Prize',
-    company_name: 'AWAP CMU 2023, Mars Makeover (Team: IDC).',
+    title: null,
+    company_name: 'AWAP CMU Algorithms Hackathon (Team: IDC)',
     iconBg: '#383E56',
-    date: 'April 2023',
+    date: '2023',
+    link: 'https://challonge.com/ii3qtozf',
+  },
+  {
+    title: 'Actuate AI (Senior Data Scientist)',
+    company_name:
+      'I built the vision pipeline for weapon detection. When I left Actuate, my models were deployed for 10000+ CCTV cameras at 800+ schools and facilities. Amazing environment with amazing people.',
+    iconBg: '#E6DEDD',
+    date: 'Nov 2018 - Jan 2022',
+    icon: actuateLogo,
+  },
+  {
+    title: null,
+    company_name:
+      'Edward L. Kaplan, ’71, New Venture Challenge (Employer: Aegis AI)',
+    iconBg: '#383E56',
+    date: '2019',
+    link: 'https://polsky.uchicago.edu/2019-companies/',
+  },
+  {
+    title: ' Vega Grace Inc. (Data Scientist)',
+    company_name:
+      'I built image processing pipeline and model for skin disease detection, advised by Dr.Vinay Rawlani, the most thoughtful mentor ever.',
+    iconBg: '#E6DEDD',
+    date: 'Jul 2018 - Feb 2019',
+    icon: vedaLogo,
+  },
+  {
+    title: null,
+    company_name: 'MARS Hackathon Chicago (Team: DePaul)',
+    iconBg: '#383E56',
+    date: '2018',
+    link: 'https://www.marshackathon.com/',
+  },
+  {
+    title: null,
+    company_name: 'Bosch & KPMG Mobility Hackathon Chicago (Team: Amber)',
+    iconBg: '#E6DEDD',
+    date: '2018',
+    link: 'https://www.linkedin.com/pulse/tackling-urban-mobility-challenges-chicago-steve-hill',
+  },
+  {
+    title: null,
+    company_name: 'Computer Training Institute of Chicago Full Scholarship',
+    iconBg: '#383E56',
+    date: '2018',
+  },
+  {
+    title: null,
+    company_name:
+      'Young Entrepreneurs & Sustainability Education Hack (Team: Pupa)',
+    iconBg: '#E6DEDD',
+    date: '2015',
+    link: 'https://www.facebook.com/yese.vn',
+  },
+  {
+    title: null,
+    company_name: 'FTU Excellence Student Scholarship',
+    iconBg: '#383E56',
+    date: '2015',
+  },
+  {
+    title: null,
+    company_name: 'Hanoi Startup Weekend (Team: Beeketing)',
+    iconBg: '#E6DEDD',
+    date: '2014',
+    link: 'http://gktagroup.com/startup-weekend-hanoi-2014/',
   },
 ];
 
 export const courses = [
-  { title: 'Introduction to Machine Learning', classID: 'ML101' },
-  { title: 'Supervised Learning Techniques', classID: 'ML201' },
-  { title: 'Unsupervised Learning and Clustering', classID: 'ML301' },
-  { title: 'Natural Language Processing Fundamentals', classID: 'ML401' },
-  { title: 'Deep Learning and Neural Networks', classID: 'ML501' },
-  { title: 'Reinforcement Learning Applications', classID: 'ML601' },
-  { title: 'Machine Learning for Computer Vision', classID: 'ML701' },
-  { title: 'Time Series Analysis with Machine Learning', classID: 'ML801' },
-  { title: 'Ethical Considerations in Machine Learning', classID: 'ML901' },
-  { title: 'Advanced Topics in Machine Learning Research', classID: 'ML1001' },
+  {
+    title: 'Advanced Computer Vision.',
+    classID: '16-820',
+  },
+  {
+    title: 'Multimodal Machine Learning.',
+    classID: '11-777',
+  },
+  {
+    title: 'Mathematical Fundamentals for Robotics.',
+    classID: '16-811',
+  },
+  {
+    title: 'Space Robotics.',
+    classID: '16-861',
+  },
+  {
+    title: 'Physics-based Methods in Vision.',
+    classID: '16-823',
+  },
+  {
+    title: 'Learning for 3D Vision.',
+    classID: '16-825',
+  },
+  {
+    title: 'Discrete Differential Geometry.',
+    classID: '15-858',
+  },
+  {
+    title: 'Deep Multi-Task and Meta Learning.',
+    classID: 'CS330',
+  },
+  {
+    title: 'Fundamentals of Data Science.',
+    classID: 'IS467',
+  },
+  {
+    title: 'Advanced Data Analysis.',
+    classID: 'CSC424',
+  },
+  {
+    title: 'Machine Learning.',
+    classID: 'CSC478',
+  },
+  {
+    title: 'Social Networks Analysis .',
+    classID: 'CSC495',
+  },
+  {
+    title: 'Image Processing.',
+    classID: 'CSC481',
+  },
+  {
+    title: 'Computer Vision.',
+    classID: 'CSC528',
+  },
+  {
+    title: 'Mining Big Data.',
+    classID: 'CSC555',
+  },
+  {
+    title: 'Advanced Data Mining.',
+    classID: 'CSC529',
+  },
+  {
+    title: 'Neural Networks and Deep Learning.',
+    classID: 'CSC578',
+  },
+  {
+    title: 'Natural Language Processing.',
+    classID: 'CSC594',
+  },
+  {
+    title: 'Cognitive Science.',
+    classID: 'CSC587',
+  },
 ];

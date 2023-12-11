@@ -12,6 +12,9 @@ import odometryThumbnail from './projects/odometry.jpeg';
 import samThumbnail from './projects/sam3d.jpeg';
 import sortThumbnail from './projects/sort.jpeg';
 
+import actuateLogo from './companies/actuate.png';
+import vedaLogo from './companies/veda.jpeg';
+
 export {
   perceptionThumbnail,
   roboticThumbnail,
@@ -25,4 +28,6 @@ export {
   odometryThumbnail,
   samThumbnail,
   sortThumbnail,
+  actuateLogo,
+  vedaLogo,
 };
