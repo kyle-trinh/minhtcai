@@ -25,20 +25,38 @@ function App() {
               <div className='flex flex-col gap-6 font-light text-lg'>
                 <p>
                   I am a graduate student of the Master of Science in Computer
-                  Vision at Carnegie Mellon University, where I work on computer
-                  vision and machine learning.
+                  Vision at Carnegie Mellon University, advised by{' '}
+                  <span className=' text-primary bg-secondary px-2 py-0.5 hover:bg-white rounded'>
+                    <a
+                      href='https://www.cs.cmu.edu/~motoole2/'
+                      target='blank'
+                      rel='noreferrer noopener'
+                    >
+                      Prof.O'Toole
+                    </a>
+                  </span>
+                  , where I work on imaging, camera and machine learning.
                 </p>
                 <p>
                   Prior to CMU, I've worked at Actuate AI as a Data Scientist
                   for more than 3 years. Prior to Actuate, I've earned my degree
-                  in Data Science from DePaul University, where I was advised by
-                  Prof.Jacob Furst, and in E-commerce from Foreign Trade
-                  University of Hanoi, advised by Prof.Hung Nguyen.
+                  in Data Science from DePaul University, where I was advised by{' '}
+                  <span className=' text-primary bg-secondary px-2 py-0.5 hover:bg-white rounded'>
+                    <a
+                      href='https://www.cdm.depaul.edu/Faculty-and-Staff/pages/faculty-info.aspx?fid=365'
+                      target='blank'
+                      rel='noreferrer noopener'
+                    >
+                      Prof.Jacob Furst
+                    </a>
+                  </span>
+                  , and in E-commerce from Foreign Trade University of Hanoi,
+                  advised by Prof.Hung Nguyen.
                 </p>
               </div>
               <div className='flex mt-6 gap-5 flex-wrap justify-center xl:justify-start'>
                 <a
-                  href='minh-resume.pdf'
+                  href='cv.pdf'
                   target='blank'
                   rel='noreferrer noopener'
                   className='bg-white text-primary rounded-lg px-3 py-2 hover:bg-secondary'
@@ -54,7 +72,7 @@ function App() {
                   Github
                 </a>
                 <a
-                  href='https://scholar.google.com/citations?user=k4t5_hEAAAAJ&hl=en&authuser=1'
+                  href='https://scholar.google.com/citations?authuser=1&user=k4t5_hEAAAAJ'
                   target='blank'
                   rel='noreferrer noopener'
                   className='text-white border-white border-2 rounded-lg px-3 py-2 hover:bg-secondary hover:text-primary'
@@ -62,7 +80,7 @@ function App() {
                   Google Scholar
                 </a>
                 <a
-                  href='mailto:minht@cs.cmu.edu'
+                  href='mailto:minh@viai.io'
                   className='text-white border-white border-2 rounded-lg px-3 py-2 hover:bg-secondary hover:text-primary'
                 >
                   Email
