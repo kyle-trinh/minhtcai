@@ -21,13 +21,14 @@ const ExperienceCard = ({ experience }) => {
       contentArrowStyle={{ borderRight: '7px solid  #232631' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
+      iconClassName='overflow-hidden'
       icon={
         experience.icon ? (
           <div className='flex justify-center items-center w-full h-full'>
             <img
               src={experience.icon}
               alt={experience.company_name}
-              className='w-[60%] h-[60%] object-contain'
+              className='w-[90%] h-[90%] object-contain'
             />
           </div>
         ) : undefined
@@ -49,6 +50,19 @@ const ExperienceCard = ({ experience }) => {
             {experience.company_name}
           </p>
         </div>
+
+        {experience.points && (
+          <ul className={`${experience.title ? 'mt-5 ml-5' : ''} space-y-2`}>
+            {experience.points.map((point, index) => (
+              <li
+                key={`experience-point-${index}`}
+                className='text-white-100 text-[14px] pl-1 tracking-wider'
+              >
+                {point}
+              </li>
+            ))}
+          </ul>
+        )}
       </a>
     </VerticalTimelineElement>
   );

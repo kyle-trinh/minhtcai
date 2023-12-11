@@ -12,7 +12,7 @@ import odometryThumbnail from './projects/odometry.jpeg';
 import samThumbnail from './projects/sam3d.jpeg';
 import sortThumbnail from './projects/sort.jpeg';
 
-import actuateLogo from './companies/actuate.png';
+import actuateLogo from './companies/actuate.webp';
 import vedaLogo from './companies/veda.jpeg';
 
 export {

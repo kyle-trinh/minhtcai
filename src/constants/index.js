@@ -26,7 +26,7 @@ export const navLinks = [
   },
   {
     id: 'honors',
-    title: 'Honors & Awards',
+    title: 'Awards & Experiences',
   },
   {
     id: 'courseworks',
@@ -157,86 +157,92 @@ export const projects = [
 export const experiences = [
   {
     title: 'First Prize & Best in Show',
-    company_name: 'hackAuton CMU (Team: Patient Safety)',
+    points: ['hackAuton CMU (Team: Patient Safety)'],
     iconBg: '#383E56',
     date: '2023',
     link: 'https://docs.google.com/presentation/d/1U9HUG89AFapU0Pz71Q3tZr5lgBnSF4tqZ3lJitQnjI4/edit#slide=id.g27f50e000bb_0_42',
   },
   {
     title: null,
-    company_name: 'McKinsey Digital Hackathon New York (Team: CPC4)',
+    points: ['McKinsey Digital Hackathon New York (Team: CPC4)'],
     iconBg: '#E6DEDD',
     date: '2023',
     link: 'https://hackathon-nyc2023.mckinsey.com/',
   },
   {
     title: null,
-    company_name: 'AWAP CMU Algorithms Hackathon (Team: IDC)',
+    points: ['AWAP CMU Algorithms Hackathon (Team: IDC)'],
     iconBg: '#383E56',
     date: '2023',
     link: 'https://challonge.com/ii3qtozf',
   },
   {
-    title: 'Actuate AI (Senior Data Scientist)',
-    company_name:
+    title: 'Senior Data Scientist',
+    company_name: 'Actuate AI',
+    points: [
       'I built the vision pipeline for weapon detection. When I left Actuate, my models were deployed for 10000+ CCTV cameras at 800+ schools and facilities. Amazing environment with amazing people.',
-    iconBg: '#E6DEDD',
+    ],
+    iconBg: '#fff',
     date: 'Nov 2018 - Jan 2022',
     icon: actuateLogo,
   },
   {
     title: null,
-    company_name:
+    points: [
       'Edward L. Kaplan, ’71, New Venture Challenge (Employer: Aegis AI)',
+    ],
     iconBg: '#383E56',
     date: '2019',
     link: 'https://polsky.uchicago.edu/2019-companies/',
   },
   {
-    title: ' Vega Grace Inc. (Data Scientist)',
-    company_name:
+    title: 'Data Scientist',
+    company_name: 'Vega Grace Inc.',
+    points: [
       'I built image processing pipeline and model for skin disease detection, advised by Dr.Vinay Rawlani, the most thoughtful mentor ever.',
-    iconBg: '#E6DEDD',
+    ],
+    iconBg: '#262626',
     date: 'Jul 2018 - Feb 2019',
     icon: vedaLogo,
   },
   {
     title: null,
-    company_name: 'MARS Hackathon Chicago (Team: DePaul)',
+    points: ['MARS Hackathon Chicago (Team: DePaul)'],
     iconBg: '#383E56',
     date: '2018',
     link: 'https://www.marshackathon.com/',
   },
   {
     title: null,
-    company_name: 'Bosch & KPMG Mobility Hackathon Chicago (Team: Amber)',
+    points: ['Bosch & KPMG Mobility Hackathon Chicago (Team: Amber)'],
     iconBg: '#E6DEDD',
     date: '2018',
     link: 'https://www.linkedin.com/pulse/tackling-urban-mobility-challenges-chicago-steve-hill',
   },
   {
     title: null,
-    company_name: 'Computer Training Institute of Chicago Full Scholarship',
+    points: ['Computer Training Institute of Chicago Full Scholarship'],
     iconBg: '#383E56',
     date: '2018',
   },
   {
     title: null,
-    company_name:
+    points: [
       'Young Entrepreneurs & Sustainability Education Hack (Team: Pupa)',
+    ],
     iconBg: '#E6DEDD',
     date: '2015',
     link: 'https://www.facebook.com/yese.vn',
   },
   {
     title: null,
-    company_name: 'FTU Excellence Student Scholarship',
+    points: ['FTU Excellence Student Scholarship'],
     iconBg: '#383E56',
     date: '2015',
   },
   {
     title: null,
-    company_name: 'Hanoi Startup Weekend (Team: Beeketing)',
+    points: ['Hanoi Startup Weekend (Team: Beeketing)'],
     iconBg: '#E6DEDD',
     date: '2014',
     link: 'http://gktagroup.com/startup-weekend-hanoi-2014/',
