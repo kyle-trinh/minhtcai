@@ -15,7 +15,7 @@ const ServiceCard = ({ index, title, image, description }) => (
   >
     <img
       src={image}
-      alt='web-development'
+      alt={title}
       className='lg:w-80 lg:max-w-none object-cover rounded-[20px] w-auto h-80 md:max-h-52 lg:h-auto lg:max-h-none'
     />
     <div

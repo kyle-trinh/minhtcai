@@ -15,6 +15,8 @@ import sortThumbnail from './projects/sort.jpeg';
 import actuateLogo from './companies/actuate.webp';
 import vedaLogo from './companies/veda.jpeg';
 
+import profileImage from './minh.webp';
+
 export {
   perceptionThumbnail,
   roboticThumbnail,
@@ -30,4 +32,5 @@ export {
   sortThumbnail,
   actuateLogo,
   vedaLogo,
+  profileImage,
 };

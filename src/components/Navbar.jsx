@@ -6,6 +6,7 @@ function Navbar({ isOpen, setIsOpen }) {
       <button
         className='fixed top-6 left-6 z-50 md:hidden'
         onClick={() => setIsOpen((open) => !open)}
+        aria-label='Mobile Menu Toggle'
       >
         <div className='flex flex-col gap-1'>
           <div className={`w-8 h-1  ${isOpen ? 'bg-black' : 'bg-white'}`} />
