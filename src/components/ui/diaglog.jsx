@@ -47,7 +47,7 @@ const DialogDemo = ({ isOpen, setIsModalOpen, project }) => {
                 </TooltipDemo>
               )}
               {presentation && (
-                <TooltipDemo text='Presentation'>
+                <TooltipDemo text='Archive'>
                   <a
                     href={presentation}
                     target='blank'

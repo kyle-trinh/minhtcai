@@ -1,7 +1,16 @@
 import {
+  cameraThumbnail,
+  cubeThumbnail,
+  fedThumbnail,
+  fruitThumbnail,
+  metaThumbnail,
+  moonThumbnail,
+  odometryThumbnail,
   perceptionThumbnail,
   roboticThumbnail,
+  samThumbnail,
   segmentationThumbnail,
+  sortThumbnail,
 } from '../assets';
 
 export const navLinks = [
@@ -47,43 +56,99 @@ export const projects = [
       'Part segmentation can reduce the ambiguity of meshes used in further downstream tasks for AR/VR at Meta. Multi-view(MV) part segmentation faces challenges due to complexity and high labeling costs/time (can take up to 1 min/annotation). Common failure cases at Meta and in our current pipeline involve self-occlusions, crossings between hands and feet, and complex joint actions where boundaries are unsure (forearm/upper arm under complex elbow rotations). We aim to construct novel active learning (AL) approaches to identify hard examples, maintaining ~95% of possible accuracy while reducing costs (with only ~30-35% annotated data). By selectively querying informative samples, we plan to leverage MV information to accelerate learning, offering an efficient solution for MV part segmentation.',
     image: segmentationThumbnail,
     website: 'https://mscvprojects.ri.cmu.edu/f23team4/',
-    github: null,
-    report: null,
+    github: 'https://github.com/MSCV-2023/AL',
+    report:
+      'https://docs.google.com/presentation/u/1/d/1Vw--ETSGbOeRyZrrYJSOZ6YKgWl6weSIeFCBLsHp-ZI/edit#slide=id.p',
     presentation:
       'https://docs.google.com/presentation/d/1OuDYo3vnvsFMXRi41v5BWOtHTd5ERmxNzolqaGSQNVM/edit#slide=id.g288207319b1_0_45',
   },
   {
-    name: 'Hard example mining for multi-view part segmentation 2',
-    description:
-      'Part segmentation can reduce the ambiguity of meshes used in further downstream tasks for AR/VR at Meta. Multi-view(MV) part segmentation faces challenges due to complexity and high labeling costs/time (can take up to 1 min/annotation). Common failure cases at Meta and in our current pipeline involve self-occlusions, crossings between hands and feet, and complex joint actions where boundaries are unsure (forearm/upper arm under complex elbow rotations). We aim to construct novel active learning (AL) approaches to identify hard examples, maintaining ~95% of possible accuracy while reducing costs (with only ~30-35% annotated data). By selectively querying informative samples, we plan to leverage MV information to accelerate learning, offering an efficient solution for MV part segmentation.',
-    image: segmentationThumbnail,
-    website: 'https://mscvprojects.ri.cmu.edu/f23team4/',
-    github: null,
+    name: 'CubeSat Localization',
+    description: 'Classify Region and Detect Landmark for Localization',
+    image: cubeThumbnail,
+    website: null,
+    github: 'https://github.com/cmu-spacecraft-design-build-fly-2023/vision',
     report: null,
-    presentation:
-      'https://docs.google.com/presentation/d/1OuDYo3vnvsFMXRi41v5BWOtHTd5ERmxNzolqaGSQNVM/edit#slide=id.g288207319b1_0_45',
+    presentation: null,
   },
   {
-    name: 'Hard example mining for multi-view part segmentation 3',
+    name: 'MLMF: Multi-modal Meta-Learning for Federated Tasks',
     description:
-      'Part segmentation can reduce the ambiguity of meshes used in further downstream tasks for AR/VR at Meta. Multi-view(MV) part segmentation faces challenges due to complexity and high labeling costs/time (can take up to 1 min/annotation). Common failure cases at Meta and in our current pipeline involve self-occlusions, crossings between hands and feet, and complex joint actions where boundaries are unsure (forearm/upper arm under complex elbow rotations). We aim to construct novel active learning (AL) approaches to identify hard examples, maintaining ~95% of possible accuracy while reducing costs (with only ~30-35% annotated data). By selectively querying informative samples, we plan to leverage MV information to accelerate learning, offering an efficient solution for MV part segmentation.',
-    image: segmentationThumbnail,
-    website: 'https://mscvprojects.ri.cmu.edu/f23team4/',
-    github: null,
-    report: null,
-    presentation:
-      'https://docs.google.com/presentation/d/1OuDYo3vnvsFMXRi41v5BWOtHTd5ERmxNzolqaGSQNVM/edit#slide=id.g288207319b1_0_45',
+      'Improve learning from missing modalites in federated settings',
+    image: fedThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/MLMF',
+    report:
+      'https://docs.google.com/presentation/d/1MwLl7O0FB1ggzywZUPWjlDJ6JFL5KK5cUmluIcyVNBc/edit#slide=id.g2a309d2eb40_0_0',
+    presentation: null,
   },
   {
-    name: 'Hard example mining for multi-view part segmentation 4',
+    name: 'Pose Estimation for Stereo Visual Odometry - Updating',
+    description: 'Optical Flow and Depth for Pose Estimation on TartanAir',
+    image: odometryThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/iStereoVO',
+    report:
+      'https://docs.google.com/presentation/d/1OclG_DjVSUWer8Il-_WNDMO6jF75jfnPFaVCFgNX8RY/edit',
+    presentation: null,
+  },
+  {
+    name: 'Structured Light for Fruit Freshness Prediction',
+    description: 'Is structured light better?',
+    image: fruitThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/fruit_freshness',
+    report:
+      'https://docs.google.com/presentation/d/1U7qYeAOosmj36D6bmybok-jwUEahBSwIgsE5ZTu4PPo/edit#slide=id.g21238f436ba_0_633',
+    presentation: null,
+  },
+  {
+    name: 'Fine-tuning 2D Segmentation for 3D Vision - Updating',
+    description: 'Fine-tune SAM model for 3D inputs.',
+    image: samThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/SAM3D',
+    report:
+      'https://docs.google.com/presentation/d/1A8nDw6mRxrCmrL6xTCyuhMGYQotg3jcR4qrCwmoyu14/edit#slide=id.g23dd7b1c6e6_0_2',
+    presentation: null,
+  },
+  {
+    name: 'Meta Learning for Few-Shot Medical Text Classification',
     description:
-      'Part segmentation can reduce the ambiguity of meshes used in further downstream tasks for AR/VR at Meta. Multi-view(MV) part segmentation faces challenges due to complexity and high labeling costs/time (can take up to 1 min/annotation). Common failure cases at Meta and in our current pipeline involve self-occlusions, crossings between hands and feet, and complex joint actions where boundaries are unsure (forearm/upper arm under complex elbow rotations). We aim to construct novel active learning (AL) approaches to identify hard examples, maintaining ~95% of possible accuracy while reducing costs (with only ~30-35% annotated data). By selectively querying informative samples, we plan to leverage MV information to accelerate learning, offering an efficient solution for MV part segmentation.',
-    image: segmentationThumbnail,
-    website: 'https://mscvprojects.ri.cmu.edu/f23team4/',
+      'Meta Learning with Distributionally Robust Optimization for Medical Text',
+    image: metaThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/meta-mimic',
+    report: null,
+    presentation: 'https://arxiv.org/pdf/2212.01552.pdf',
+  },
+  {
+    name: 'Camera Next Door - Updating',
+    description:
+      'A home-made pipeline of incremental learning for object detection',
+    image: cameraThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/camera-next-door',
+    report: null,
+    presentation: null,
+  },
+  {
+    name: 'YOLOv4+SORT',
+    description: 'Add object tracker to YOLOv4 Darknet',
+    image: sortThumbnail,
+    website: null,
+    github: 'https://github.com/minhtcai/darknet',
+    report: null,
+    presentation: null,
+  },
+  {
+    name: 'PrismRanger Localization - Updating',
+    description: 'Localization on the Moon using ground image',
+    image: moonThumbnail,
+    website: null,
     github: null,
     report: null,
-    presentation:
-      'https://docs.google.com/presentation/d/1OuDYo3vnvsFMXRi41v5BWOtHTd5ERmxNzolqaGSQNVM/edit#slide=id.g288207319b1_0_45',
+    presentation: null,
   },
 ];
 

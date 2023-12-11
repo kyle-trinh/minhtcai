@@ -33,7 +33,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer '
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer h-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -59,7 +59,9 @@ const Projects = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>
+          Research Experience and Selected Projects.
+        </h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -69,9 +71,8 @@ const Projects = () => {
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          links to code repositories and reports. It reflects my ability to
+          solve complex problems and manage projects effectively.
         </motion.p>
       </div>
 
