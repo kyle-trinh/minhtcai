@@ -7,7 +7,6 @@ import Experience from './components/Experience';
 import Courses from './components/Courses';
 import Navbar from './components/Navbar';
 import { HelmetProvider } from 'react-helmet-async';
-import SEO from './components/SEO';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,10 +14,6 @@ function App() {
   return (
     <HelmetProvider>
       <Suspense fallback={null}>
-        <SEO
-          title="Minh Tran's Portfolio"
-          description="I am a graduate student of the Master of Science in Computer Vision at Carnegie Mellon University, advised by Prof.O'Toole, where I work on imaging, camera and machine learning."
-        />
         <StarsCanvas />
         <Navbar isOpen={isMenuOpen} setIsOpen={setIsMenuOpen} />
         <div onClick={() => setIsMenuOpen(false)}>
