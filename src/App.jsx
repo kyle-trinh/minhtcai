@@ -34,10 +34,21 @@ function App() {
                         target='blank'
                         rel='noreferrer noopener'
                       >
-                        Prof.O'Toole
+                        Prof. Matthew P. O'Toole
                       </a>
                     </span>
-                    , where I work on imaging, camera and machine learning.
+                    , where I work on imaging, camera and machine learning. For my capstone project at Meta Reality Lab
+                    , I was advised by{' '}
+                    <span className=' text-primary bg-secondary px-2 py-0.5 hover:bg-white rounded'>
+                      <a
+                        href='https://www.cs.cmu.edu/~dpathak/'
+                        target='blank'
+                        rel='noreferrer noopener'
+                      >
+                        Prof. Deepak Pathak
+                      </a>
+                    </span>
+                    , He Wen and Yuan Dong, along with my partner Ashwin Vaswani.
                   </p>
                   <p>
                     Prior to CMU, I've worked at Actuate AI as a Data Scientist
